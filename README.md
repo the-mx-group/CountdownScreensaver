@@ -3,7 +3,13 @@ CountdownScreensaver
 
 A simple countdown screensaver in Winodows 8.1 style optimized for use with Screensaver grace period. 
 
-With correctly set environment the screensaver will count down seconds before workstation lock on all connected displays. Useful for mitigating the impact of setting a strict worstation lock policy to user experience. A recommended value of the grace period is 5 - 10 seconds, with 10 - 15 minutes of idle time before the lock occurs. 
+With correctly set environment the screensaver will count down seconds before workstation lock on all connected displays. Useful for mitigating the impact of setting a strict worstation lock policy to user experience. A recommended value of the grace period is 5 - 10 seconds, with 10 - 15 minutes of idle time before the lock occurs.
+
+Features:
+- Windows 8 style
+- Multilanguage support
+- Customization support
+- Multiple display support
 
 Requirements:
 - All power plans are set to sleep after more than idletime + grace period 
@@ -21,3 +27,5 @@ powercfg.exe /SETDCVALUEINDEX SCHEME_ALL SUB_SLEEP STANDBYIDLE 930
 HKLM\Software\Microsoft\Windows NT\CurrentVersion\Winlogon\ScreenSaverGracePeriod : REG_SZ : 10
 ```
 - Screensaver is set to the CountdownScreensaver.scr (build using x64 on 64-bit system, then rename the .exe to .scr)
+
+![nine seconds remaining](https://raw.githubusercontent.com/nohwnd/CountdownScreensaver/master/Screenshots/9seconds.png)![one second remaining](https://raw.githubusercontent.com/nohwnd/CountdownScreensaver/master/Screenshots/1Second.png)
