@@ -30,7 +30,7 @@
         }
         public string Id
         {
-            get { return "CZE"; }
+            get { return "CES"; }
         }
     }
 
@@ -60,7 +60,7 @@
                     _lang = new English();
                     break;
                 }
-                case "CZE":
+                case "CES":
                 {
                     _lang = new Czech();
                     break;
