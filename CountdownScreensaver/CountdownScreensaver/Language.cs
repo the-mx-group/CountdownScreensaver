@@ -1,4 +1,5 @@
-﻿namespace CountdownScreensaver
+﻿using System;
+namespace CountdownScreensaver
 {
     /// <summary>
     /// Interface to localized messages.
@@ -38,7 +39,7 @@
     {
         public string GetMessage(int value)
         {
-            return string.Format(value == 1  ? "The station will lock in {0} second" : "The station will lock in {0} seconds", value);
+            return string.Format(value == 1 ? "The computer will lock in {0} second" + Environment.NewLine + "Move the mouse or press any key to prevent" : "The computer will lock in {0} seconds" + Environment.NewLine + "Move the mouse or press any key to prevent", value);
         }
         public string Id
         {
